@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk Saya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    .carousel-wrapper {
+      overflow: hidden;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+    .carousel img {
+      flex: 0 0 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+    .description {
+      margin: 15px 0;
+    }
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
+    .whatsapp-button img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="carousel-wrapper">
+      <p class="hint-text">Geser ke samping&raquo;</p>
+      <div class="carousel">
+        <img src="tiktok.png" alt="Produk 1" />
+        <img src="tiktok.png" alt="Produk 2" />
+        <img src="tiktok.png" alt="Produk 3" />
+      </div>
+    </div>
+    <div class="description">
+      <h2>ishahahaaa</h2>
+      <p>Deskripsi produk yang menarik dan informatif. Bisa menyebutkan bahan, ukuran, manfaat, dsb.</p>
+    </div>
+    <a class="whatsapp-button" href="https://wa.me/6281234567890" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
+      Hubungi via WhatsApp
+    </a>
+  </div>
+</body>
+</html>
